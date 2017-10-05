@@ -33,13 +33,13 @@ withBoxUnlocked(function() {
   box.content.push("золотишко");
 });
 
-// try {
-//   withBoxUnlocked(function() {
-//     throw new Error("Пираты на горизонте! Отмена!");
-//   });
-// } catch (e) {
-//   console.log("Произошла ошибка:", e);
-// }
+try {
+  withBoxUnlocked(function() {
+    throw new Error("Пираты на горизонте! Отмена!");
+  });
+} catch (e) {
+  console.log("Произошла ошибка:", e);
+}
 console.log(box.locked);
 // → true
 </script>
